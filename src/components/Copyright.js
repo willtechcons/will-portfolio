@@ -4,7 +4,7 @@ const Copyright = () => {
       <div className="container">
         {" "}
         <p>
-          Developed with love by <a href="#">Codeefly</a> © 2023
+          Developed with love by <a href="#">Will</a> © 2025
         </p>
       </div>
     </div>
