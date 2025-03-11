@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { doraSlider } from "../sliderProps";
 
-const Service = () => {
-  const serviceData = [
+const Skills = () => {
+  const skillData = [
     {
       id: 1,
       icon: "images/icons/ui-ux.svg",
@@ -54,50 +54,50 @@ const Service = () => {
   ];
 
   return (
-    <section className="service-section" id="services">
+    <section className="skill-section" id="skills">
       <div className="container">
         <div className="row align-items-center">
-          <div className="service-title-container">
-            {/* Service Title */}
+          <div className="skill-title-container">
+            {/* skill Title */}
             <div className="section_title wow fadeInUp">
               <p>Skills</p>
               <h2>My Core Skills & Expertise</h2>
             </div>
             {/* Arrow icon */}
-            <div className="service-btn-container wow fadeInUp">
-              <a href="#" className="slider-arrow service-swiper-button-left">
+            <div className="skill-btn-container wow fadeInUp">
+              <a href="#" className="slider-arrow skill-swiper-button-left">
                 <img
                   className="svg"
                   src="images/icons/arrow-left.svg"
-                  alt="service left btn"
+                  alt="skill left btn"
                 />
               </a>
               <a
                 href="#"
-                className="slider-arrow active service-swiper-button-right"
+                className="slider-arrow active skill-swiper-button-right"
               >
                 <img
                   className="svg"
                   src="images/icons/arrow-right.svg"
-                  alt="service left btn"
+                  alt="skill left btn"
                 />
               </a>
             </div>
           </div>
           <Swiper
-            {...doraSlider.serviceSlider}
-            className="swiper services-cont wow fadeInUp"
+            {...doraSlider.skillSlider}
+            className="swiper skills-cont wow fadeInUp"
           >
             {" "}
-            {serviceData.map((service, i) => (
+            {skillData.map((skill, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
-                <div className="service-item">
+                <div className="skill-item">
                   <span
-                    className={`service-item-logo service-item-logo-cont-${service.id}`}
+                    className={`skill-item-logo skill-item-logo-cont-${skill.id}`}
                   >
-                    <img src={service.icon} alt="service" />
+                    <img src={skill.icon} alt="skill" />
                   </span>
-                  <h4>{service.title}</h4>
+                  <h4>{skill.title}</h4>
                   <p>
                     Rror te inal desiga othe fal dveoprer age your adcased men
                     Mageeef speists
@@ -111,4 +111,4 @@ const Service = () => {
     </section>
   );
 };
-export default Service;
+export default skill;
