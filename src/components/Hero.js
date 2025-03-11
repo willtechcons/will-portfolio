@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="row">
           <div className="hero-text wow fadeInUp">
             <span>Hi, I'm</span>
-            <h1>Nguyen Quoc Huy, Will</h1>
+            <h1>Huy Nguyen</h1>
             <h3>Tech Consulting & ERP Solutions</h3>
             <p>
             Some years you win, some years you gain character.
@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
           {/* Hero Image */}
           <div className="hero-img">
-            <img src="images/hero-person-img.png" alt="dora_img" />
+            <img src="images/will.png" alt="will_img" />
           </div>
         </div>
       </div>

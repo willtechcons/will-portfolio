@@ -8,8 +8,8 @@ const Blog = () => {
       <div className="container">
         {/* Blog Titel */}
         <div className="section_title wow fadeInUp center">
-          <p>From My Blog</p>
-          <h2>Our Recent Updates, Blog, Tips, Tricks &amp; More</h2>
+          <p>My Case Study</p>
+          <h2>Real-world solutions, proven impact.</h2>
         </div>
         <div className="blog-items">
           {blogs.map((blog) => (

@@ -1,4 +1,4 @@
-import Blog from "@/src/components/Blog";
+import CaseStudy from "@/src/components/CaseStudy";
 import Contact from "@/src/components/Contact";
 import Copyright from "@/src/components/Copyright";
 import Experience from "@/src/components/Experience";
@@ -9,7 +9,7 @@ import BlogPopup from "@/src/components/popup/BlogPopup";
 import ImageView from "@/src/components/popup/ImageView";
 import PortfolioPopup from "@/src/components/popup/PortfolioPopup";
 import VideoPopup from "@/src/components/popup/VideoPopup";
-import Service from "@/src/components/Service";
+import Skills from "@/src/components/Skills";
 import Support from "@/src/components/Support";
 import Works from "@/src/components/Works";
 import { DoraContext } from "@/src/Context";
@@ -52,7 +52,7 @@ const Index = () => {
       <Support />
       {/* Support Section End */}
       {/* Service Section Start */}
-      <Service />
+      <Skills />
       {/* Service Section End */}
       {/* Experience Section Start */}
       <Experience />
@@ -64,7 +64,7 @@ const Index = () => {
       <Feedback />
       {/* Feedback Section End */}
       {/* Blog Section Start */}
-      <Blog />
+      <CaseStudy />
       {/* Blog Section End */}
       {/* Contact Section Start */}
       <Contact />

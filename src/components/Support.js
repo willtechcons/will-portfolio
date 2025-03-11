@@ -44,8 +44,8 @@ const Support = () => {
                 />
               </div>
               <div className="support-text">
-                <h3>Continous learning</h3>
-                <p>Lifelong</p>
+                <h3>Lifelong</h3>
+                <p>Learning</p>
               </div>
             </div>
             {/* 03 support item end */}
