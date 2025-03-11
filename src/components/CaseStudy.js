@@ -1,31 +1,31 @@
 import { useContext } from "react";
 import { DoraContext } from "../Context";
 
-const Blog = () => {
+const CaseStudy = () => {
   const { blogDetails, blogs } = useContext(DoraContext);
   return (
-    <section className="blog-section fill-section" id="blog">
+    <section className="case-study-section fill-section" id="case-study">
       <div className="container">
-        {/* Blog Titel */}
+        {/* Case Study Title */}
         <div className="section_title wow fadeInUp center">
           <p>My Case Study</p>
           <h2>Real-world solutions, proven impact.</h2>
         </div>
-        <div className="blog-items">
+        <div className="case-study-items">
           {blogs.map((blog) => (
-            <div className="blog-item" key={blog.id}>
+            <div className="case-study-item" key={blog.id}>
               <div className="wow fadeInUp item__">
-                <div className="blog-date-cont">
+                <div className="case-study-date-cont">
                   <p>{blog.date}</p>
                 </div>
                 <a
                   href="#"
-                  className="blog-item-img"
+                  className="case-study-item-img"
                   onClick={() => blogDetails(blog)}
                 >
-                  <img src={blog.img} alt="dora_img" />
+                  <img src={blog.img} alt="case-study-img" />
                 </a>
-                <div className="blog-info">
+                <div className="case-study-info">
                   <a
                     href="#"
                     onClick={() => blogDetails(blog)}
@@ -47,4 +47,4 @@ const Blog = () => {
     </section>
   );
 };
-export default Blog;
+export default CaseStudy;
