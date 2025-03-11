@@ -14,7 +14,7 @@ const Support = () => {
                 />
               </div>
               <div className="support-text">
-                <h3>8 years job</h3>
+                <h3>3 years job</h3>
                 <p>Experience</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Support = () => {
                 />
               </div>
               <div className="support-text">
-                <h3>500+ Projects</h3>
+                <h3>10+ Projects</h3>
                 <p>Completed</p>
               </div>
             </div>
@@ -44,8 +44,8 @@ const Support = () => {
                 />
               </div>
               <div className="support-text">
-                <h3>Support</h3>
-                <p>Online 24/7</p>
+                <h3>Continous learning</h3>
+                <p>Lifelong</p>
               </div>
             </div>
             {/* 03 support item end */}

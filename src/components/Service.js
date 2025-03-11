@@ -60,8 +60,8 @@ const Service = () => {
           <div className="service-title-container">
             {/* Service Title */}
             <div className="section_title wow fadeInUp">
-              <p>Services</p>
-              <h2>I Provide Wide Range Of Digital Services</h2>
+              <p>Skills</p>
+              <h2>My Core Skills & Expertise</h2>
             </div>
             {/* Arrow icon */}
             <div className="service-btn-container wow fadeInUp">
