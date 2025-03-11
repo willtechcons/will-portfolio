@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { doraSlider } from "../sliderProps";
 
-const Skills = () => {
+const Skill = () => {
   const skillData = [
     {
       id: 1,
