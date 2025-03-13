@@ -11,7 +11,7 @@ const CaseStudy = () => {
           <p>My Case Study</p>
           <h2>Real-world solutions, proven impact.</h2>
         </div>
-        <div className="case-study-items">
+        <div className="case-study-i  tems">
           {blogs.map((blog) => (
             <div className="case-study-item" key={blog.id}>
               <div className="wow fadeInUp item__">
