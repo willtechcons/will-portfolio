@@ -50,3 +50,6 @@ header .container.active {
     display: none;
   }
 }
+.skill-item p {
+  text-align: justify;
+}

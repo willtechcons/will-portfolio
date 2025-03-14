@@ -3,7 +3,7 @@ const DoraHead = () => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>Dora - Personal React Portfolio Template</title>
+      <title>Will's Portfolio (Nguyen Quoc Huy)</title>
       <link
         type="text/css"
         rel="stylesheet"
