@@ -74,17 +74,17 @@ const Service = () => {
             className="swiper services-cont wow fadeInUp"
           >
             {" "}
-            {serviceData.map((skills, i) => (
+            {serviceData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span
-                    className={`service-item-logo service-item-logo-cont-${Service.id}`}
+                    className={`service-item-logo service-item-logo-cont-${service.id}`}
                   >
-                    <img src={Service.icon} alt="service" />
+                    <img src={service.icon} alt="service" />
                   </span>
-                  <h4>{Service.title}</h4>
+                  <h4>{service.title}</h4>
                   <p>
-                    {Service.des}
+                    {service.des}
                   </p>
                 </div>
               </SwiperSlide>
