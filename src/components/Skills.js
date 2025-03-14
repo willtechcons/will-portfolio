@@ -7,25 +7,48 @@ const Skills = () => {
       id: 1,
       icon: "/images/icons/business.svg",
       title: "Business",
-      des: "Understanding business models, financials, and digital transformation. Hands-on experience in building a business and consult others (Marketing, HR) @GoodWill Consulting @Aspiro Studio @Allianz",
+      des: (
+        <>
+        Understanding business models, financials, and digital transformation. Hands-on experience in building a business and consult others (Marketing, HR)
+        <br />
+        @GoodWill Consulting @Aspiro Studio @Allianz
+         </>
+      ),
     },
     {
       id: 2,
       icon: "/images/icons/strategy.svg",
       title: "Strategy",
-      des: "Developing IT and digital strategies aligned with business goals. @GoodWill Consulting @Surfline Media @Aspiro Studio",
+      des: (
+        <>
+        Developing IT and digital strategies aligned with business goals. 
+        <br />
+        @GoodWill Consulting @Surfline Media @Aspiro Studio
+        </>),
     },
     {
       id: 3,
       icon: "/images/icons/technology.svg",
       title: "Technology",
-      des: "Deep knowledge in Cloud, Data Analytics (PowerBI, TableAu), Java OOP and automation tools (Zapier, GoHighLevel, Metricool). Junior SAP executive. @Aspiro Studio @Allianz @Surfline Media",
+      des: (
+        <> 
+        Deep knowledge in Cloud, Data Analytics (PowerBI, TableAu), Java OOP and automation tools (Zapier, GoHighLevel, Metricool). Junior SAP executive.
+        <br />
+        @Aspiro Studio @Allianz @Surfline Media
+        </>
+        ),
     },
     {
       id: 4,
       icon: "/images/icons/problemsolving.svg",
       title: "Problem-Solving",
-      des: "Experienced in analyzing problems from multiple perspectives. Having worked both as an employee and a business owner, I understand different stakeholders' mindsets and needs. @GoodWill Consulting @Aspiro Studio @Allianz",
+      des: (
+        <>
+        Experienced in analyzing problems from multiple perspectives. Having worked both as an employee and a business owner, I understand different stakeholders' mindsets and needs. 
+        <br />
+        @GoodWill Consulting @Aspiro Studio @Allianz
+        </>
+      ),
     },
     {
       id: 5,

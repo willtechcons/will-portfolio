@@ -53,3 +53,11 @@ header .container.active {
 .skill-item p {
   text-align: justify;
 }
+.skill-item-logo img {
+  width: 40px !important; /* Giữ nguyên kích thước gốc */
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  display: block;
+  margin: 0 auto; /* Căn giữa */
+}
