@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { doraSlider } from "../sliderProps";
 
-const Skills = () => {
-  const skillData = [
+const Services = () => {
+  const serviceData = [
     {
       id: 1,
       icon: "/images/icons/business.svg",
@@ -102,7 +102,7 @@ const Skills = () => {
             className="swiper services-cont wow fadeInUp"
           >
             {" "}
-            {skillData.map((service, i) => (
+            {serviceData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span
