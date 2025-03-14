@@ -92,7 +92,7 @@ const Service = () => {
                 <img
                   className="svg"
                   src="images/icons/arrow-right.svg"
-                  alt="service right btn"
+                  alt="service left btn"
                 />
               </a>
             </div>
