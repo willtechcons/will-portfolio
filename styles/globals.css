@@ -98,3 +98,10 @@ header .container.active {
   width: 30px;
   height: 30px;
 }
+.slider-arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 10; /* Đảm bảo nút nằm trên các phần tử khác */
+}

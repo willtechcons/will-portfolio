@@ -52,8 +52,7 @@ const Service = () => {
             </div>
             {/* Arrow icon */}
             <div className="service-btn-container wow fadeInUp">
-              <a
-                href="#"
+              <button
                 className="slider-arrow service-swiper-button-left"
                 onClick={(e) => {
                   e.preventDefault();
@@ -65,9 +64,8 @@ const Service = () => {
                   src="images/icons/arrow-left.svg"
                   alt="service left btn"
                 />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 className="slider-arrow service-swiper-button-right"
                 onClick={(e) => {
                   e.preventDefault();
@@ -79,7 +77,7 @@ const Service = () => {
                   src="images/icons/arrow-right.svg"
                   alt="service right btn"
                 />
-              </a>
+              </button>
             </div>
           </div>
           <Swiper
