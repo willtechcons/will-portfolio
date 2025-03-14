@@ -68,3 +68,33 @@ header .container.active {
   margin: 0 auto;
   filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
 }
+.swiper {
+  overflow: visible !important; /* Giúp hiển thị Swiper đúng */
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.service-item {
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.slider-arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.slider-arrow img {
+  width: 30px;
+  height: 30px;
+}

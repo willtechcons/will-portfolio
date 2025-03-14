@@ -5,15 +5,15 @@ export const doraSlider = {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
-    grabCursor: true,
-    fade: true,
+    grabCursor: true, // Giúp dễ vuốt hơn
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
+      disableOnInteraction: false, // Đảm bảo không bị đứng khi click
     },
     navigation: {
       nextEl: ".service-swiper-button-right",
       prevEl: ".service-swiper-button-left",
+      clickable: true, // Cho phép click vào nút điều hướng
     },
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 30 },
@@ -21,23 +21,6 @@ export const doraSlider = {
       860: { slidesPerView: 2, spaceBetween: 25 },
       1000: { slidesPerView: 3, spaceBetween: 25 },
       1240: { slidesPerView: 4, spaceBetween: 30 },
-    },
-  },
-  feedbackSlider: {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    grabCursor: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".feedback-right",
-      prevEl: ".feedback-left",
-    },
-    breakpoints: {
-      1400: { slidesPerView: 2, spaceBetween: 30 },
     },
   },
 };
