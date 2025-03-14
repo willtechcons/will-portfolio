@@ -1,7 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { doraSlider } from "../sliderProps";
 
-const Skills = () => {
+const service = () => {
   const serviceData = [
     {
       id: 1,
@@ -73,13 +78,13 @@ const Skills = () => {
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span
-                    className={`service-item-logo service-item-logo-cont-${skills.id}`}
+                    className={`service-item-logo service-item-logo-cont-${service.id}`}
                   >
-                    <img src={skills.icon} alt="service" />
+                    <img src={service.icon} alt="service" />
                   </span>
-                  <h4>{skills.title}</h4>
+                  <h4>{service.title}</h4>
                   <p>
-                    {skills.des}
+                    {service.des}
                   </p>
                 </div>
               </SwiperSlide>
