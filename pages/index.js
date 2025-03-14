@@ -9,7 +9,7 @@ import BlogPopup from "@/src/components/popup/BlogPopup";
 import ImageView from "@/src/components/popup/ImageView";
 import PortfolioPopup from "@/src/components/popup/PortfolioPopup";
 import VideoPopup from "@/src/components/popup/VideoPopup";
-import Skills from "@/src/components/Service";
+import Service from "@/src/components/Service";
 import Support from "@/src/components/Support";
 import Works from "@/src/components/Works";
 import { DoraContext } from "@/src/Context";
@@ -52,7 +52,7 @@ const Index = () => {
       <Support />
       {/* Support Section End */}
       {/* Service Section Start */}
-      <Skills />
+      <Service />
       {/* Service Section End */}
       {/* Experience Section Start */}
       <Experience />

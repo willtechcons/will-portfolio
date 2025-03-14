@@ -102,7 +102,7 @@ const Skills = () => {
             className="swiper services-cont wow fadeInUp"
           >
             {" "}
-            {serviceData.map((service, i) => (
+            {skillData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span
