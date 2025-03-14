@@ -1,9 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { doraSlider } from "../sliderProps";
 
 const Service = () => {
@@ -96,4 +91,5 @@ const Service = () => {
   );
 };
 export default Service;
+
 
