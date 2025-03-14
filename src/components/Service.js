@@ -32,7 +32,7 @@ const Service = () => {
       title: "Technology",
       des: (
         <> 
-        Experienced with Java, ERP, CRM (GoHighLevel, Zapier) and BI tools. Proficient in Cloud & Analytics.
+        Experienced with Java, ERP, CRM (GoHighLevel) and automation tools (Zapier). Proficient in Cloud & Analytics.
         <br />
         <small>@Aspiro Studio @Allianz @Surfline Media</small>
         </>
@@ -71,51 +71,40 @@ const Service = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="service-title-container">
-            {/* Service Title */}
             <div className="section_title wow fadeInUp">
               <p>Skills</p>
               <h2>My Core Skills & Expertise</h2>
             </div>
-            {/* Arrow icon */}
             <div className="service-btn-container wow fadeInUp">
-              <button
-                className="slider-arrow service-swiper-button-left"
-                onClick={() => swiperRef.current?.slidePrev()} // Gọi slidePrev()
-              >
+              <a href="#" className="slider-arrow service-swiper-button-left">
                 <img
                   className="svg"
-                  src="images/icons/arrow-left.svg"
+                  src="/images/icons/arrow-left.svg"
                   alt="service left btn"
                 />
-              </button>
-              <button
+              </a>
+              <a
+                href="#"
                 className="slider-arrow active service-swiper-button-right"
-                onClick={() => swiperRef.current?.slideNext()} // Gọi slideNext()
               >
                 <img
                   className="svg"
-                  src="images/icons/arrow-right.svg"
+                  src="/images/icons/arrow-right.svg"
                   alt="service right btn"
                 />
-              </button>
+              </a>
             </div>
           </div>
-          <Swiper
-            {...doraSlider.serviceSlider}
-            modules={[Navigation]} // Thêm Navigation module
-            onSwiper={(swiper) => (swiperRef.current = swiper)} // Gán ref cho Swiper
-            className="swiper services-cont wow fadeInUp"
-          >
+          <Swiper {...doraSlider.serviceSlider} className="swiper services-cont wow fadeInUp">
             {serviceData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
-                  <span
-                    className={`service-item-logo service-item-logo-cont-${service.id}`}
-                  >
+                  <span className={`service-item-logo service-item-logo-cont-${service.id}`}>
                     <img src={service.icon} alt="service" />
                   </span>
                   <h4>{service.title}</h4>
                   <p>{service.des}</p>
+                  
                 </div>
               </SwiperSlide>
             ))}
