@@ -1,21 +1,14 @@
 {
-  "name": "dora-react",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "name": "Will",
+  "packageManager": "yarn@4.7.0",
   "dependencies": {
-    "@next/font": "13.1.6",
+    "@next/font": "^14.2.15",
     "emailjs-com": "^3.2.0",
-    "gsap": "^3.11.4",
     "isotope-layout": "^3.0.6",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "swiper": "^9.0.3"
+    "next": "^15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-player": "^2.16.0",
+    "swiper": "^11.2.5"
   }
 }
