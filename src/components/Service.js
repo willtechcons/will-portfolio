@@ -9,9 +9,9 @@ const Service = () => {
       title: "Business",
       des: (
         <>
-        Understanding business models, financials, and digital transformation. Hands-on experience in building a business and consult others (Marketing, HR)
+        Strong in business model and finance. Hands-on experience in business development, sales, and marketing.
         <br />
-        @GoodWill Consulting @Aspiro Studio @Allianz
+        <small>@GoodWill Consulting @Aspiro Studio @Allianz</small>
          </>
       ),
     },
@@ -21,9 +21,9 @@ const Service = () => {
       title: "Strategy",
       des: (
         <>
-        Developing IT and digital strategies aligned with business goals. 
+        Developing IT and digital strategies aligned with business goals. Fast technology adoption and implementation.
         <br />
-        @GoodWill Consulting @Surfline Media @Aspiro Studio
+        <small>@GoodWill Consulting @Surfline Media @Aspiro Studio</small>
         </>),
     },
     {
@@ -32,9 +32,9 @@ const Service = () => {
       title: "Technology",
       des: (
         <> 
-        Deep knowledge in Cloud, Data Analytics (PowerBI, TableAu), Java OOP and automation tools (Zapier, GoHighLevel, Metricool). Junior SAP executive.
+        Experienced with Java, ERP, CRM (GoHighLevel, Zapier) and BI tools. Proficient in Cloud & Analytics.
         <br />
-        @Aspiro Studio @Allianz @Surfline Media
+        <small>@Aspiro Studio @Allianz @Surfline Media</small>
         </>
         ),
     },
@@ -44,9 +44,9 @@ const Service = () => {
       title: "Problem-Solving",
       des: (
         <>
-        Experienced in analyzing problems from multiple perspectives. Having worked both as an employee and a business owner, I understand different stakeholders' mindsets and needs. 
+        Analyze problems from all angles. Experience as employee and founder. Strong decision-making skills.
         <br />
-        @GoodWill Consulting @Aspiro Studio @Allianz
+        <small>@GoodWill Consulting @Aspiro Studio @Allianz</small>
         </>
       ),
     },
@@ -56,9 +56,9 @@ const Service = () => {
       title: "Communication",
       des: (
         <>
-          Strong client-facing communication, successfully convinced 4 companies (each with 20+ employees) to enter a contract through strategic negotiation, presentation with proposals, and persuasive communication.
+        Strong client-facing communication. Secured contracts via negotiaion, proposals and presentations.
           <br />
-          @GoodWill Consulting, @Aspiro Studio
+          <small>@GoodWill Consulting, @Aspiro Studio</small>
         </>
       ),
       
@@ -78,30 +78,34 @@ const Service = () => {
             </div>
             {/* Arrow icon */}
             <div className="service-btn-container wow fadeInUp">
-              <a href="#" className="slider-arrow service-swiper-button-left">
+              <button
+                className="slider-arrow service-swiper-button-left"
+                onClick={() => swiperRef.current?.slidePrev()} // Gọi slidePrev()
+              >
                 <img
                   className="svg"
                   src="images/icons/arrow-left.svg"
                   alt="service left btn"
                 />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 className="slider-arrow active service-swiper-button-right"
+                onClick={() => swiperRef.current?.slideNext()} // Gọi slideNext()
               >
                 <img
                   className="svg"
                   src="images/icons/arrow-right.svg"
-                  alt="service left btn"
+                  alt="service right btn"
                 />
-              </a>
+              </button>
             </div>
           </div>
           <Swiper
             {...doraSlider.serviceSlider}
+            modules={[Navigation]} // Thêm Navigation module
+            onSwiper={(swiper) => (swiperRef.current = swiper)} // Gán ref cho Swiper
             className="swiper services-cont wow fadeInUp"
           >
-            {" "}
             {serviceData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
@@ -111,9 +115,7 @@ const Service = () => {
                     <img src={service.icon} alt="service" />
                   </span>
                   <h4>{service.title}</h4>
-                  <p>
-                     {service.des} 
-                  </p>
+                  <p>{service.des}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -123,5 +125,5 @@ const Service = () => {
     </section>
   );
 };
-export default Service;
 
+export default Service;
