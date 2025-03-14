@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { doraSlider } from "../sliderProps";
 
-const service = () => {
+const Service = () => {
   const serviceData = [
     {
       id: 1,
@@ -78,13 +78,13 @@ const service = () => {
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span
-                    className={`service-item-logo service-item-logo-cont-${service.id}`}
+                    className={`service-item-logo service-item-logo-cont-${Service.id}`}
                   >
-                    <img src={service.icon} alt="service" />
+                    <img src={Service.icon} alt="service" />
                   </span>
-                  <h4>{service.title}</h4>
+                  <h4>{Service.title}</h4>
                   <p>
-                    {service.des}
+                    {Service.des}
                   </p>
                 </div>
               </SwiperSlide>
