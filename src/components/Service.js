@@ -7,53 +7,31 @@ const Service = () => {
       id: 1,
       icon: "/images/icons/business.svg",
       title: "Business & Strategy",
-      des: (
-        <>
-        Strong in business model and finance. Hands-on experience in business development, sales, and marketing.
-        <br />
-        <small>@GoodWill Consulting @Aspiro Studio @Allianz</small>
-         </>
-      ),
+      des: "Strong in business models and finance. Experienced in sales & marketing.",
+      tag: "@GoodWill Consulting @Aspiro Studio @Allianz",
     },
     {
       id: 2,
-      icon: "/images/icons/communication.svg",  
+      icon: "/images/icons/communication.svg",
       title: "Communication",
-      des: (
-        <>
-        Strong client-facing communication. Secured contracts via negotiaion, proposals and presentations.
-          <br />
-          <small>@GoodWill Consulting, @Aspiro Studio</small>
-        </>
-      ),
+      des: "Client-facing skills. Secured contracts via negotiation & presentations.",
+      tag: "@GoodWill Consulting @Aspiro Studio",
     },
     {
       id: 3,
       icon: "/images/icons/technology.svg",
       title: "Technology",
-      des: (
-        <> 
-        Experienced with Java, ERP, CRM (GoHighLevel) and automation tools (Zapier). Proficient in Cloud & Analytics.
-        <br />
-        <small>@Aspiro Studio @Allianz @Surfline Media</small>
-        </>
-        ),
+      des: "Java, ERP, CRM, Cloud & Analytics. Automation via Zapier, GoHighLevel.",
+      tag: "@Aspiro Studio @Allianz @Surfline Media",
     },
     {
       id: 4,
       icon: "/images/icons/problemsolving.svg",
       title: "Problem-Solving",
-      des: (
-        <>
-        Analyze problems from all angles. Experience as employee and founder. Strong decision-making skills.
-        <br />
-        <small>@GoodWill Consulting @Aspiro Studio @Allianz</small>
-        </>
-      ),
+      des: "Analyze issues from all angles. Experience as both employee & founder.",
+      tag: "@GoodWill Consulting @Aspiro Studio @Allianz",
     },
-    
   ];
-  
 
   return (
     <section className="service-section" id="services">
@@ -72,10 +50,7 @@ const Service = () => {
                   alt="service left btn"
                 />
               </a>
-              <a
-                href="#"
-                className="slider-arrow active service-swiper-button-right"
-              >
+              <a href="#" className="slider-arrow active service-swiper-button-right">
                 <img
                   className="svg"
                   src="/images/icons/arrow-right.svg"
@@ -85,15 +60,15 @@ const Service = () => {
             </div>
           </div>
           <Swiper {...doraSlider.serviceSlider} className="swiper services-cont wow fadeInUp">
-            {serviceData.map((service, i) => (
-              <SwiperSlide className="swiper-slide" key={i}>
+            {serviceData.map((service) => (
+              <SwiperSlide className="swiper-slide" key={service.id}>
                 <div className="service-item">
                   <span className={`service-item-logo service-item-logo-cont-${service.id}`}>
-                    <img src={service.icon} alt="service" />
+                    <img src={service.icon} alt={service.title} />
                   </span>
                   <h4>{service.title}</h4>
                   <p>{service.des}</p>
-                  
+                  <small className="service-tag">{service.tag}</small>
                 </div>
               </SwiperSlide>
             ))}

@@ -68,7 +68,3 @@ header .container.active {
   margin: 0 auto;
   filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
 }
-.service-item-logo-cont-5 { background-color: #2ecc71; }  /* Communication */
-.service-item h4 {
-  font-size: 18px; 
-}
