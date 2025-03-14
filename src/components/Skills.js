@@ -5,29 +5,36 @@ const Skills = () => {
   const skillData = [
     {
       id: 1,
-      icon: "images/icons/ui-ux.svg",
-      title: "UI/UX Design",
-      des: "Creating intuitive and engaging user experiences.",
+      icon: "images/icons/business.svg",
+      title: "Business",
+      des: "Understanding business models, financials, and digital transformation. Hands-on experience in building a business and consult others (Marketing, HR) @GoodWill Consulting @Aspiro Studio @Allianz",
     },
     {
       id: 2,
-      icon: "images/icons/web-design.svg",
-      title: "Web Design",
-      des: "Designing responsive and visually appealing websites.",
+      icon: "images/icons/strategy.svg",
+      title: "Strategy",
+      des: "Developing IT and digital strategies aligned with business goals. @GoodWill Consulting @Surfline Media @Aspiro Studio",
     },
     {
       id: 3,
-      icon: "images/icons/digital-marketing.svg",
-      title: "Digital Marketing",
-      des: "Developing data-driven marketing strategies.",
+      icon: "images/icons/technology.svg",
+      title: "Technology",
+      des: "Deep knowledge in Cloud, Data Analytics (PowerBI, TableAu), Java OOP and automation tools (Zapier, GoHighLevel, Metricool). Junior SAP executive. @Aspiro Studio @Allianz @Surfline Media",
     },
     {
       id: 4,
-      icon: "images/icons/app-design.svg",
-      title: "App Development",
-      des: "Building scalable and efficient mobile applications.",
+      icon: "images/icons/problemsolving.svg",
+      title: "Problem-Solving",
+      des: "Experienced in analyzing problems from multiple perspectives. Having worked both as an employee and a business owner, I understand different stakeholders' mindsets and needs. @GoodWill Consulting @Aspiro Studio @Allianz",
+    },
+    {
+      id: 5,
+      icon: "images/icons/communication.svg",  
+      title: "Communication",
+      des: "Strong client-facing communication, successfully convinced 4 companies (each with 20+ employees) to enter a contract through strategic negotiation, presentation with proposals and persuasive communication. (@GoodWill Consulting, @Aspiro Studio)",
     },
   ];
+  
 
   return (
     <section className="skill-section" id="skills">
