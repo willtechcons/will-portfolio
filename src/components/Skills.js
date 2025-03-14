@@ -38,7 +38,7 @@ const Skills = () => {
           @GoodWill Consulting, @Aspiro Studio
         </>
       ),
-      ,
+      
     },
   ];
   
