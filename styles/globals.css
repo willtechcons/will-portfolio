@@ -60,3 +60,12 @@ header .container.active {
   display: block;
   margin: 0 auto; /* Căn giữa */
 }
+.service-item-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1); /* Chuyển icon thành màu trắng */
+}
+.service-item-logo-cont-5 { background-color: #2ecc71; }  /* Communication */

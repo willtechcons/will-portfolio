@@ -92,7 +92,7 @@ const Service = () => {
                 <img
                   className="svg"
                   src="images/icons/arrow-right.svg"
-                  alt="service left btn"
+                  alt="service right btn"
                 />
               </a>
             </div>
@@ -112,7 +112,7 @@ const Service = () => {
                   </span>
                   <h4>{service.title}</h4>
                   <p>
-                    Will's Skills: 
+                     {service.des} 
                   </p>
                 </div>
               </SwiperSlide>
