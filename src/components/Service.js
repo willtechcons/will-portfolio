@@ -6,8 +6,8 @@ const Service = () => {
     {
       id: 1,
       icon: "/images/icons/business.svg",
-      title: "Business & Strategy",
-      des: "Strong in business models and finance. Experienced in sales & marketing.",
+      title: "Business",
+      des: "Strong in business models and finance. Hands-on experience in business developing.",
       tag: "@GoodWill Consulting @Aspiro Studio @Allianz",
     },
     {
@@ -21,13 +21,13 @@ const Service = () => {
       id: 3,
       icon: "/images/icons/technology.svg",
       title: "Technology",
-      des: "Java, ERP, CRM, Cloud & Analytics. Automation via Zapier, GoHighLevel.",
+      des: "Java, ERP, CRM, Cloud & Analytics, Automation via Zapier, GoHighLevel, SAP, AWS.",
       tag: "@Aspiro Studio @Allianz @Surfline Media",
     },
     {
       id: 4,
       icon: "/images/icons/problemsolving.svg",
-      title: "Problem-Solving",
+      title: "Strategy",
       des: "Analyze issues from all angles. Experience as both employee & founder.",
       tag: "@GoodWill Consulting @Aspiro Studio @Allianz",
     },
@@ -44,31 +44,23 @@ const Service = () => {
             </div>
             <div className="service-btn-container wow fadeInUp">
               <a href="#" className="slider-arrow service-swiper-button-left">
-                <img
-                  className="svg"
-                  src="/images/icons/arrow-left.svg"
-                  alt="service left btn"
-                />
+                <img className="svg" src="/images/icons/arrow-left.svg" alt="service left btn" />
               </a>
               <a href="#" className="slider-arrow active service-swiper-button-right">
-                <img
-                  className="svg"
-                  src="/images/icons/arrow-right.svg"
-                  alt="service right btn"
-                />
+                <img className="svg" src="/images/icons/arrow-right.svg" alt="service right btn" />
               </a>
             </div>
           </div>
+
           <Swiper {...doraSlider.serviceSlider} className="swiper services-cont wow fadeInUp">
-            {serviceData.map((service) => (
-              <SwiperSlide className="swiper-slide" key={service.id}>
+            {serviceData.map((service, i) => (
+              <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
                   <span className={`service-item-logo service-item-logo-cont-${service.id}`}>
-                    <img src={service.icon} alt={service.title} />
+                    <img src={service.icon} alt="service" />
                   </span>
                   <h4>{service.title}</h4>
                   <p>{service.des}</p>
-                  <small className="service-tag">{service.tag}</small>
                 </div>
               </SwiperSlide>
             ))}
