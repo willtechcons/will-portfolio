@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-
+import { useRef } from "react";
 
 const Service = () => {
   const serviceData = [
@@ -38,6 +38,8 @@ const Service = () => {
     },
   ];
 
+  const swiperRef = useRef(null);
+
   return (
     <section className="service-section" id="services">
       <div className="container">
@@ -50,7 +52,14 @@ const Service = () => {
             </div>
             {/* Arrow icon */}
             <div className="service-btn-container wow fadeInUp">
-              <a href="#" className="slider-arrow service-swiper-button-left">
+              <a
+                href="#"
+                className="slider-arrow service-swiper-button-left"
+                onClick={(e) => {
+                  e.preventDefault();
+                  swiperRef.current.swiper.slidePrev();
+                }}
+              >
                 <img
                   className="svg"
                   src="images/icons/arrow-left.svg"
@@ -59,12 +68,16 @@ const Service = () => {
               </a>
               <a
                 href="#"
-                className="slider-arrow active service-swiper-button-right"
+                className="slider-arrow service-swiper-button-right"
+                onClick={(e) => {
+                  e.preventDefault();
+                  swiperRef.current.swiper.slideNext();
+                }}
               >
                 <img
                   className="svg"
                   src="images/icons/arrow-right.svg"
-                  alt="service left btn"
+                  alt="service right btn"
                 />
               </a>
             </div>
@@ -72,8 +85,8 @@ const Service = () => {
           <Swiper
             {...doraSlider.serviceSlider}
             className="swiper services-cont wow fadeInUp"
+            ref={swiperRef}
           >
-            {" "}
             {serviceData.map((service, i) => (
               <SwiperSlide className="swiper-slide" key={i}>
                 <div className="service-item">
@@ -83,9 +96,7 @@ const Service = () => {
                     <img src={service.icon} alt="service" />
                   </span>
                   <h4>{service.title}</h4>
-                  <p>
-                    {service.des}
-                  </p>
+                  <p>{service.des}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -95,6 +106,5 @@ const Service = () => {
     </section>
   );
 };
+
 export default Service;
-
-
