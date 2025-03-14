@@ -6,7 +6,7 @@ const Service = () => {
     {
       id: 1,
       icon: "/images/icons/business.svg",
-      title: "Business",
+      title: "Business & Strategy",
       des: (
         <>
         Strong in business model and finance. Hands-on experience in business development, sales, and marketing.
@@ -17,14 +17,15 @@ const Service = () => {
     },
     {
       id: 2,
-      icon: "/images/icons/strategy.svg",
-      title: "Strategy",
+      icon: "/images/icons/communication.svg",  
+      title: "Communication",
       des: (
         <>
-        Developing IT and digital strategies aligned with business goals. Fast technology adoption and implementation.
-        <br />
-        <small>@GoodWill Consulting @Surfline Media @Aspiro Studio</small>
-        </>),
+        Strong client-facing communication. Secured contracts via negotiaion, proposals and presentations.
+          <br />
+          <small>@GoodWill Consulting, @Aspiro Studio</small>
+        </>
+      ),
     },
     {
       id: 3,
@@ -50,19 +51,7 @@ const Service = () => {
         </>
       ),
     },
-    {
-      id: 5,
-      icon: "/images/icons/communication.svg",  
-      title: "Communication",
-      des: (
-        <>
-        Strong client-facing communication. Secured contracts via negotiaion, proposals and presentations.
-          <br />
-          <small>@GoodWill Consulting, @Aspiro Studio</small>
-        </>
-      ),
-      
-    },
+    
   ];
   
 
