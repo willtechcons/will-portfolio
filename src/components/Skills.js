@@ -31,9 +31,14 @@ const Skills = () => {
       id: 5,
       icon: "/images/icons/communication.svg",  
       title: "Communication",
-      des: "Strong client-facing communication, successfully convinced 4 companies (each with 20+ employees) to enter a contract through strategic negotiation, presentation with proposals and persuasive communication. 
-      <br /> 
-      @GoodWill Consulting, @Aspiro Studio",
+      des: (
+        <>
+          Strong client-facing communication, successfully convinced 4 companies (each with 20+ employees) to enter a contract through strategic negotiation, presentation with proposals, and persuasive communication.
+          <br />
+          @GoodWill Consulting, @Aspiro Studio
+        </>
+      ),
+      ,
     },
   ];
   
